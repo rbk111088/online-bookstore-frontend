@@ -1,0 +1,179 @@
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #243b53;
+}
+
+p {
+  color: #555;
+}
+
+table {
+  width: 100%;
+  margin-top: 24px;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #f2f4f7;
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  background: #245b8f;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #19446d;
+}
+
+.error {
+  color: #c62828;
+}
+
+.message {
+  display: block;
+  margin: 15px 0;
+  padding: 12px;
+  background-color: #e8f5e9;
+  color: #245b35;
+  border: 1px solid #a5d6a7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+
+.auth-section {
+  max-width: 520px;
+  margin: 32px auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.auth-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.auth-actions button {
+  min-width: 110px;
+}
+
+/* Bookstore page background */
+:host {
+  display: block;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(248, 246, 240, 0.88),
+      rgba(248, 246, 240, 0.88)
+    ),
+    url('/assets/bookstore-bg.jpg') center / cover fixed;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px;
+  background: transparent;
+}
+
+/* Content sections */
+.auth-section,
+.books-section,
+.cart-section,
+.orders-section {
+  background: rgba(255, 255, 255, 0.94);
+  padding: 24px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(30, 55, 80, 0.10);
+}
+
+/* Confirmed order status */
+.status-confirmed {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #d1fae5;
+  color: #166534;
+  font-weight: 600;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .container {
+    padding: 12px;
+  }
+
+  .auth-section,
+  .books-section,
+  .cart-section,
+  .orders-section {
+    padding: 14px;
+  }
+}
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(248, 246, 240, 0.82),
+      rgba(248, 246, 240, 0.82)
+    ),
+    url('/assets/bookstore-bg.jpg') center / cover fixed;
+}
